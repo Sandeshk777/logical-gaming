@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About Us</title>
+    <!-- Latest compiled and minified CSS -->
+
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title></title>
+  <script>
+    $('#myCarousel').on('slid.bs.carousel', function(event) {
+      $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
+    })
+
+    $('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
+    $('#myCarousel').carousel('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
+  </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <style>
+            .faq-section {
+                margin-top: 36px
+            }
+            
+            .faq-section .faq-title {
+                text-align: center;
+                margin-bottom: 24px
+            }
+            
+            .btn.btn-accordion {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 8px 12px 12px;
+                gap: 14px;
+                background: linear-gradient(90deg,#a982ba 0,#e27855 100%);
+                border-radius: 8px;
+                border: none;
+                width: 100%
+            }
+            
+            .btn.btn-accordion h3 {
+                margin-bottom: 0;
+                text-align: left;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #fff
+            }
+            
+            .btn.btn-accordion .icon {
+                width: 24px;
+                height: 24px;
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9L12 15L18 9' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: center;
+                border: none
+            }
+            
+            .btn.btn-accordion.active .icon {
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 15L12 9L6 15' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+            }
+            
+            .accordion-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .2s ease-out;
+                font-size: 14px;
+                line-height: 20px;
+                color: #252638
+            }
+            
+            .accordion-content .accordion-text {
+                padding: 12px 32px 0 8px
+            }
+            
+            .accordion-itemm {
+                margin-top: 24px
+            }
+            
+            .accordion-itemm:first-child {
+                margin-top: 0
+            }
+           
+            @media (min-width: 768px) {
+                .content {
+                    margin-top:80px
+                }
+            
+                .title-box .title {
+                    letter-spacing: 0;
+                    font-size: 32px;
+                    line-height: 44px
+                }
+            
+                .title-box .sub {
+                    font-size: 16px;
+                    line-height: 24px
+                }
+            
+                .tool-box {
+                    align-items: flex-start;
+                    justify-content: center;
+                    flex-direction: row;
+                    margin-top: 88px
+                }
+            
+                .tool-box:first-child {
+                    margin-top: 64px
+                }
+            
+                .tool-box.tool-reverse .tool-info {
+                    order: 1
+                }
+            
+                .tool-box.tool-reverse .tool-thumb {
+                    order: 2
+                }
+            
+                .tool-box .tool-info {
+                    width: calc(55% - 4px)
+                }
+            
+                .tool-box .tool-thumb {
+                    width: calc(45% - 4px)
+                }
+            
+                .tool-info a,.tool-info h4 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: -.01em
+                }
+            
+                .tool-info p {
+                    font-size: 16px;
+                    line-height: 24px
+                }
+        
+
+            }
+
+            #about-us {
+  background-color: #f6e261;
+  padding: 80px 0;
+}
+
+#about-us h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+#about-us p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+
+.features {
+      background: #252638;
+      padding: 46px 0 31px;
+      --bs-gutter-x: 0.9rem;
+      --bs-gutter-y: 0;
+      margin-top: calc(-1 * var(--bs-gutter-y));
+      margin-right: calc(-.5 * var(--bs-gutter-x));
+      margin-left: calc(-.5 * var(--bs-gutter-x));
+      padding-left: calc(.5 * var(--bs-gutter-x));
+      padding-right: calc(.5 * var(--bs-gutter-x));
+      color: #fff
+  }
+  
+  .features .h3 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 1rem
+  }
+  
+  .features ul {
+      margin-bottom: 0
+  }
+  
+  .list-features li {
+      display: grid;
+      grid-template-columns: 18px auto;
+      grid-column-gap: 8px;
+      margin-bottom: 12px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: rgba(255,255,255,.88)
+  }
+  
+  .list-features li::before {
+      content: "";
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.3409 4.5L6.34091 13.5L2.25 9.40909' stroke='%23BE54FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      display: inline-block;
+      width: 18px;
+      height: 18px
+  }
+  </style>
+
+
+
+</style>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img class="logo-img" src="My project (1).png" width="50" height="50" ALT="align box" ALIGN=CENTER>
+            <a class="navbar-brand" href="index.html">Logical Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Games
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="Quiz Application With Timer\index.html">Quiz Application With Timer</a></li>
+              <li><a class="dropdown-item" href="Snake Game\index.html">Snake Game </a></li>
+
+              <li><a class="dropdown-item" href="Tic Tac Toe\index.html">Tic Tac Toe</a></li>
+              <li><a class="dropdown-item" href="Typing Speed Test\index.html">Typing Speed Test </a></li>
+              <li><a class="dropdown-item" href="Word Guessing Game\index.html"> Word Guessing Game</a></li>
+              <li><a class="dropdown-item" href="Word Scramble Game\index.html"> Word Scramble Game</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="http://localhost/project/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="http://localhost/project/about.html">About
+                            Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<br>
+<br>
+<br>
+    <section id="about-us">
+        <div class="container">
+          <h2>About Us</h2>
+          <center>
+            <div class="col-md-6">
+                
+              <p>Welcome to our logical gaming website! We are dedicated to providing our visitors with a fun and challenging gaming experience that exercises their problem-solving skills and critical thinking abilities.
+
+                Our website offers a wide range of logical games, including puzzles, brain teasers, strategy games, and more. Whether you're a seasoned gamer or just starting out, our selection of games will keep you entertained for hours on end.
+              </p>
+                <p>  We believe that logical games are not only enjoyable but also beneficial for our mental health. By engaging in activities that challenge our cognitive abilities, we can improve our memory, attention, and processing speed.
+                 Additionally, playing logical games can reduce stress and improve mood, making it a great way to unwind after a long day.</p>
+              <p>Our mission is to provide a fun and challenging gaming experience that exercises our visitors' problem-solving skills and critical thinking abilities.</p>
+            </div>
+        
+            </center>
+            
+          
+        </div>
+      </section>
+      <hr>
+<br>
+<br>
+
+    <div class="faq-section">
+        <h3 class="faq-title">Naver Give Up</h3>
+        <div class="faqs" id="faq" itemscope="" itemtype="https://schema.org/FAQPage">
+        <div class="accordion">
+        <div class="accordion-itemm" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+        <button class="btn btn-accordion">
+       <h3 class="accordion-title" itemprop="name"> It's not about how good you are, it's about how good you want to be</h3>
+         
+        </button>
+        <div class="accordion-content" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer" >
+        <div class="accordion-text" itemprop="text"></div>
+        </div>
+        </div>
+        <div class="accordion-itemm" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+        <button class="btn btn-accordion">
+        <h3 class="accordion-title" itemprop="name">The only way to do great work is to love what you do.</h3>
+         
+        </button>
+        <div class="accordion-content" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+        <div class="accordion-text" itemprop="text"></div>
+        </div>
+        </div>
+        <div class="accordion-itemm" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+        <button class="btn btn-accordion">
+        <h3 class="accordion-title" itemprop="name">I don't know how to play video games casually. I'm either not interested at all or I play 16 hours and forget to eat.</h3>
+         
+        </button>
+        <div class="accordion-content" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer">
+        <div class="accordion-text" itemprop="text"> <a href="https://snapinsta.app">https://snapinsta.app</a> and follow the instructions.</div>
+        </div>
+        </div>
+        <div class="accordion-itemm" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+        <button class="btn btn-accordion">
+        <h3 class="accordion-title" itemprop="name">The game has its ups and downs, but you can never lose focus of your individual goals and you can't let yourself be beaten because of lack of effort.</h3>
+         
+        </button>
+     <br>
+     <br>
+     <br>
+
+        <div class="features">
+           
+            <div class="list-features">
+            <ul class="list-unstyled row">
+             <li class="col-12 col-md-6"><a href="index.html" class="badge badge-dark">Home</a></li>
+             <li class="col-12 col-md-6">Quiz Game</li>
+             <li class="col-12 col-md-6"><a href="About.html" class="badge badge-dark">About Us</a></li>
+             <li class="col-12 col-md-6">Snake Game</li>
+             <li class="col-12 col-md-6"><a href="contact.html" class="badge badge-dark">Contact Us</a></li>
+            <li class="col-12 col-md-6">Tic Tac Toe Game</li>
+            <li class="col-12 col-md-6">Typing speed test </li>
+            <li class="col-12 col-md-6">Word Guessing Game</li>
+            <li class="col-12 col-md-6">word sramble Game</li>
+            </ul>
+            </div>
+            <center><h4 aligen="center">&#169; 2023 Logical Gaming • All Right Reserved</h4></center>
+            </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        
+
+       
+   
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>

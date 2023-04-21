@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title></title>
+  <script>
+    $('#myCarousel').on('slid.bs.carousel', function(event) {
+      $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
+    })
+
+    $('#myCarousel').carousel('1') // Will start sliding to the slide 1 and returns to the caller
+    $('#myCarousel').carousel('2') // !! Will be ignored, as the transition to the slide 1 is not finished !!
+  </script>
+
+    <style>
+        .features {
+            background: #252638;
+            padding: 46px 0 31px;
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-.5 * var(--bs-gutter-x));
+            margin-left: calc(-.5 * var(--bs-gutter-x));
+            padding-left: calc(.5 * var(--bs-gutter-x));
+            padding-right: calc(.5 * var(--bs-gutter-x));
+            color: #fff
+        }
+        
+        .features .h3 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem
+        }
+        
+        .features ul {
+            margin-bottom: 0
+        }
+        
+        .list-features li {
+            display: grid;
+            grid-template-columns: 18px auto;
+            grid-column-gap: 8px;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(255,255,255,.88)
+        }
+        
+        .list-features li::before {
+            content: "";
+            background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.3409 4.5L6.34091 13.5L2.25 9.40909' stroke='%23BE54FF' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            display: inline-block;
+            width: 18px;
+            height: 18px
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <img class="logo-img" src="My project (1).png" width="50" height="50" ALT="align box" ALIGN=CENTER>
+          <a class="navbar-brand" href="index.html">Logical Gaming</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Games
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="Quiz Application With Timer\index.html">Quiz Application With Timer</a></li>
+                  <li><a class="dropdown-item" href="Snake Game\index.html">Snake Game </a></li>
+    
+                  <li><a class="dropdown-item" href="Tic Tac Toe\index.html">Tic Tac Toe</a></li>
+                  <li><a class="dropdown-item" href="Typing Speed Test\index.html">Typing Speed Test </a></li>
+                  <li><a class="dropdown-item" href="Word Guessing Game\index.html"> Word Guessing Game</a></li>
+                  <li><a class="dropdown-item" href="Word Scramble Game\index.html"> Word Scramble Game</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://localhost/project/contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="http://localhost/project/about.html">About Us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<br>
+<br>
+<br>
+
+
+    <h1>Thanks For Contact Us.</h1>
+
+
+
+<br>
+<br>
+<br>
+
+    <div class="features">
+  
+        <div class="list-features">
+        <ul class="list-unstyled row">
+         <li class="col-12 col-md-6"><a href="index.html" class="badge badge-dark">Home</a></li>
+         <li class="col-12 col-md-6">Quiz Game</li>
+         <li class="col-12 col-md-6"><a href="About.html" class="badge badge-dark">About Us</a></li>
+         <li class="col-12 col-md-6">Snake Game</li>
+         <li class="col-12 col-md-6"><a href="contact.html" class="badge badge-dark">Contact Us</a></li>
+        <li class="col-12 col-md-6">Tic Tac Toe Game</li>
+        <li class="col-12 col-md-6">Typing speed test </li>
+        <li class="col-12 col-md-6">Word Guessing Game</li>
+        <li class="col-12 col-md-6">word sramble Game</li>
+        </ul>
+        </div>
+        <center><h4 aligen="center">&#169; 2023 Logical Gaming • All Right Reserved</h4></center>
+        </div>
+        
+</body>
+</html>
